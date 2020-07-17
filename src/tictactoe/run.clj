@@ -1,8 +1,7 @@
 (ns tictactoe.run
-  (:require [tictactoe.play :refer [play]])
-  (:gen-class))
+  (:require
+    [tictactoe.play :as play]))
 
-(defn -main [& args]
-  (play))
-
-
+(defn -main
+  [& _args]
+  (play/play))
